@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Tulis Harapanmu</h1>
+<form method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="hope">Harapan:</label>
+    <textarea id="hope" name="hope" required></textarea>
+    
+    <label for="send_date">Tanggal Kirim:</label>
+    <input type="date" id="send_date" name="send_date" required>
+    
+    <button type="submit">Simpan</button>
+</form>
+{% endblock %}
